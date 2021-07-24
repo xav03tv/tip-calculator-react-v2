@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+.btn, .input {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+* {
+  font-family: "Space Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #c5e4e7;
+}
+
+.container {
+  width: 920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 920px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.content {
+  margin-top: 144px;
+  display: grid;
+  gap: 4em;
+  justify-items: center;
+}
+@media screen and (max-width: 920px) {
+  .content {
+    margin-top: 3rem;
+  }
+}
+
+.mainLogo {
+  width: 100px;
+}
+
+.mainLogo {
+  width: 100px;
+}
+
+.input {
+  width: 100%;
+  background-color: #f4fafa;
+  border: none;
+  border-radius: 6px;
+  text-align: right;
+  padding: 6px 18px;
+  padding-left: 54px;
+  color: #00494d;
+  border: 2px solid transparent;
+}
+.input:focus-visible {
+  outline: none !important;
+  border: 2px solid #26c0ab;
+}
+.input--error {
+  outline: none !important;
+  border: 2px solid #B77E73;
+}
+.input--icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 1em;
+}
+.input--dollar {
+  background-image: url("../images/icon-dollar.svg");
+}
+.input--person {
+  background-image: url("../images/icon-person.svg");
+}
+.input--txtCenter {
+  text-align: center;
+  padding: 0;
+}
+
+.btn {
+  width: 100%;
+  background-color: #00494d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #9FE7DF;
+  color: #00494d;
+}
+.btn--bglight {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+.btn--selected {
+  background-color: #26c0ab;
+}
+.btn:disabled {
+  background-color: #0D686D;
+  color: #00494d;
+  cursor: no-drop;
+}
+
+.entryField {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.entryField__description {
+  width: 100%;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.entryField__label {
+  font-weight: 700;
+  color: #5e7a7d;
+}
+.entryField__errorMsg {
+  color: #B77E73;
+}
+.entryField__selectBtn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.5em;
+}
+
+.resultBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.resultBox__description {
+  display: flex;
+  flex-direction: column;
+}
+.resultBox__descriptionL1 {
+  color: white;
+  font-weight: 700;
+}
+.resultBox__descriptionL2 {
+  color: white;
+  font-size: 13px;
+  columns: #c5e4e7;
+}
+.resultBox__total {
+  font-size: 46px;
+  font-weight: 700;
+  color: #26c0ab;
+}
+
+.calculator {
+  width: 100%;
+  background-color: white;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+.calculator__output {
+  background-color: #00494d;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 920px) {
+  .calculator {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

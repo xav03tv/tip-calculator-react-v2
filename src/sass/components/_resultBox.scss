@@ -1,0 +1,30 @@
+.resultBox{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 1rem;
+
+    &__description{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__descriptionL1{
+        color: $white;
+        font-weight: 700;
+    }
+
+    &__descriptionL2{
+        color: $white;
+        font-size: $font-size-mini;
+        columns: $lightGrayishCyan;
+    }
+
+    &__total{
+        font-size: $font-size-big;
+        font-weight: 700;
+        color: $strongCyan;
+    }
+}

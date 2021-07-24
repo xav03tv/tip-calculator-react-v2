@@ -1,0 +1,56 @@
+.input{
+    width: 100%;
+    
+    background-color: $lightGrayishCyanLight;
+
+    border:none;
+    border-radius: 6px;
+
+    @extend %textInput;
+    text-align: right;
+    padding: 6px 18px;
+    padding-left: 54px;
+    color: $veryDdarkCyan;
+    
+
+    border: 2px solid transparent;
+
+    &:focus-visible{
+        outline: none !important;
+        border:2px solid $strongCyan;
+    }
+
+    &--error{
+        outline: none !important;
+        border:2px solid $red;
+    }
+
+    &--icon{
+
+        background-repeat: no-repeat;
+            background-position: center;
+            background-position-x: 1em;
+        
+    }
+
+    &--dollar{
+        background-image: url("../images/icon-dollar.svg");
+        
+    }
+
+    &--person{
+        background-image: url("../images/icon-person.svg");
+        
+    }
+
+    &--txtCenter{
+        text-align: center;
+        padding: 0;
+    }
+
+   
+
+    
+
+    
+}

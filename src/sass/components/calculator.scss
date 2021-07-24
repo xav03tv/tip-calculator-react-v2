@@ -1,0 +1,39 @@
+.calculator{
+    width: 100%;
+
+    background-color: $white;
+
+    border-radius: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    padding: 2rem;
+
+    &__entry{
+
+    }
+
+    &__output{
+        background-color: $veryDdarkCyan;
+
+        border-radius: 1rem;
+
+        padding: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__result{
+
+    }
+
+    @include mobile-only{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+}
